@@ -4,20 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github 網頁</title>
-    <!-- 外部連結 -->
+    <title>Github</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- 內部連結 -->
 <style>
-    
+   
 </style>
-
 <body>
-    <!-- 行內連結 -->
     
     我的 Github 網頁！！
-<br>你好</br>
+    <p>好</p>
+    <h1>安安</h1>
+    <p>123</p>
+    <button onclick="addButton()">按下他</button>
+<div id="btnArea"></div>
+
+<script>
+  let count = 0;
+
+  function addButton() {
+    count++;
+
+    const btn = document.createElement("button");
+    btn.textContent = "來!";
+
+    document.getElementById("btnArea").appendChild(btn);
+  }
+</script>
+    
    
 </body>
 
